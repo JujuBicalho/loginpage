@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html,
+body{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: #FFF;
+}
+
+.logo{
+  overflow: hidden;
+  width: 710px;
+  background: #fff;
+  padding: 50px;  
+  border-radius: 10px;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+}
+.logo_logo{ 
+  width: 100%;
+  margin-left: 160px;
+  width: 50%;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/*Container*/
+
+
+.form__container{  
+  display: flex;  
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+  margin: 10px 0 20px 0;
+  justify-content: space-between;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+.form__container .slide{  
+  height: 100%;
+  width: 100vw;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 48px;
+  cursor: pointer;
+  
+}
+.form__container label.signup{
+  color: #fff;
+  background-color: #ebe8e8;    
+}
+
+input[type="radio"]{
+  display: none;
+}
+
+/*Botão de cadastro e login*/
+#signup:checked ~ label.signup{
+  color: #fff;
+  cursor: default;
+  user-select: none;
+  background:#4CAF50;
+}
+#signup:checked ~ label.login{
+    color: #fff;
+    background:#ecebeb;
+    color: rgb(107, 106, 106);
+    font-weight: lighter;
+}
+#login:checked ~ label.signup{
+    color: #fff;
+    background:#ecebeb;
+    color: rgb(107, 106, 106);
+    font-weight: lighter;
+}
+#login:checked ~ label.login{
+    color: #fff;
+    cursor: default;
+    user-select: none;
+    background:#4CAF50;
+}
+.logo .form-container{
+  width: 100%;
+  overflow: hidden;
+}
+.form-container .form-inner{
+  display: flex;
+  width: 200%;
+}
+.form-container .form-inner form{
+  width: 50%;
+}
+.form-inner form .field{
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+}
+.form-inner form .field input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 15px;
+  border-radius: 5px;
+  border: 1px solid rgb(233, 232, 232);
+  border-bottom-width: 2px;
+  font-size: 17px;
+}
+
+/*Texto-Esqueci senha*/
+.form-inner form .pass-link{
+  margin-top: 5px;
+  margin-left: 430px;
+}
+
+.form-inner form .pass-link a{
+    color:#82be84;
+  text-decoration: none; 
+}
+.form-inner form .pass-link a:hover{
+  text-decoration: underline;  
+}
+
+/*Botão final*/
+.btn{
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-layer{
+  height: 100%;
+  width: 300%;
+  position: absolute;  
+  background: #4CAF50;
+  border-radius: 5px; 
+}
+
+.btn input[type="submit"]{
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  background: none;
+  border: none;
+  color: #fff;
+  padding-left: 0;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/*Img btn*/

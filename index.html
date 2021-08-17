@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/brands.min.css" integrity="sha512-sVSECYdnRMezwuq5uAjKQJEcu2wybeAPjU4VJQ9pCRcCY4pIpIw4YMHIOQ0CypfwHRvdSPbH++dA3O4Hihm/LQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />      
+      <link rel="stylesheet" href="style.css">
+      <title>Teste_DietSystem</title>
+   </head>
+
+<body>
+       <!--Logo-->
+      <div class="logo">
+         <div class="logo_logo">
+            <img src="./logo__apple.jpg" alt="Logo with Apple">
+         </div>
+                 
+
+        <!--Container-->
+         <div class="form-container">
+            <div class="form__container">
+               <input type="radio" name="slide" id="signup">
+               <label for="signup" class="slide signup">Cadastre-se</label>
+
+               <input type="radio" name="slide" id="login" checked>
+               <label for="login" class="slide login">Já tenho cadastro</label>               
+            </div>
+
+        <!--Formulários-->
+        <!--Já tenho cadastro-->
+            <div class="form-inner">
+               <form action="#" class="login">
+                  <div class="field">
+                     <input type="text" placeholder="admin@dietsystem.com" required>
+                  </div>
+
+                  <div class="field">
+                     <input type="password" placeholder="Digite a sua senha" required>
+                  </div>
+
+                  <div class="pass-link">
+                     <a href="#">Esqueci minha senha</a>
+                  </div>
+
+                  <div class="field btn">
+                     <div class="btn-layer"></div>
+                     <input type="submit" value="ENTRAR">
+                  </div>
+
+                  <div class="field btn">
+                    <div class="btn-layer"></div>
+                     <input type="submit" value="carregando">
+                         <i class="fad fa-spinner-third"></i>                        
+                  </input>                            
+                 </div>                 
+               </form>
+
+               <!--Cadastro-->
+               <form action="#" class="signup">
+                  <div class="field">
+                     <input type="text" placeholder="Email" required>
+                  </div>
+
+                  <div class="field">
+                     <input type="password" placeholder="Senha" required>
+                  </div>
+
+                  <div class="field">
+                     <input type="password" placeholder="Digite novamente a senha" required>
+                  </div>
+
+                  <div class="field btn">
+                     <div class="btn-layer"></div>
+                     <input type="submit" value="Cadastre-se">
+                  </div>
+
+               </form>
+            </div>
+         </div>
+      </div>
+
+      <!--JS-->
+<script>
+         const loginText = document.querySelector(".title-text .login");
+         const loginForm = document.querySelector("form.login");
+         const loginBtn = document.querySelector("label.login");
+         const signupBtn = document.querySelector("label.signup");
+         const signupLink = document.querySelector("form .signup-link a");
+         
+         signupBtn.onclick = (()=>{
+           loginForm.style.marginLeft = "-50%";
+           loginText.style.marginLeft = "-50%";
+
+         });
+
+         loginBtn.onclick = (()=>{
+           loginForm.style.marginLeft = "0%";
+           loginText.style.marginLeft = "0%";
+         });        
+</script>
+         
+
+     
+</body>
+</html>
